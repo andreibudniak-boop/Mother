@@ -336,7 +336,6 @@ body {
   .tips_title{
     color: #fff;
     align-self: start;
-
 }
 .card{
   width:360px;
@@ -391,4 +390,80 @@ position: relative;
     color: #7F3E41;
     background-color: #ffffff;
   }
+}
+
+.section_stories{
+  background-color: #F0EFEE;
+}
+
+.stories_container{
+  height: 1201px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* gap: 40px; */
+  padding:80px 0px;
+
+}
+
+.stories_title{
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: 32px;
+}
+
+.stories{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+
+.story{
+  height:671px;
+  width:auto;
+}
+.story-small{
+  height:278px;
+  width:551px;
+}
+/* .story_rectangle-small{
+  width:551px;
+} */
+.story_card{
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.story_cards{
+display: flex;
+flex-direction: column;
+gap: 24px;
+}
+
+.story_text{
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.story_title{
+  font-weight: var(--font-weight-bold);
+  font-size: 18px;
+}
+.story_discription{
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  color: #8B8B8B;
+  line-height: 160%;
+}
+
+.stories_btn{
+  width:192px;
+  height: 56px;
+  align-self: center;
+}
+
+.readMore{
+  color: #7F3E41;
 }
