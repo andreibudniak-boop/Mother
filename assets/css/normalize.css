@@ -19,11 +19,12 @@ dl,
 ul,
 dd {
   margin: 0;
+  padding: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -69,7 +70,7 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -81,19 +82,22 @@ select {
 }
 
 a {
-    /* Убрать стандартное подчеркивание */
+  /* Убрать стандартное подчеркивание */
+  text-decoration: none;
+
+  /* Убрать цветовые изменения */
+  color: inherit; /* наследует цвет от родителя */
+
+  /* Убрать outline при фокусе (замените на свой стиль!) */
+  outline: none;
+
+  /* Убрать все состояния */
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
+    /* color: inherit; */
     text-decoration: none;
-    
-    /* Убрать цветовые изменения */
-    color: inherit; /* наследует цвет от родителя */
-    
-    /* Убрать outline при фокусе (замените на свой стиль!) */
-    outline: none;
-    
-    /* Убрать все состояния */
-    &:visited, &:hover, &:active, &:focus {
-        /* color: inherit; */
-        text-decoration: none;
-        background-color: transparent;
-    }
+    background-color: transparent;
+  }
 }
